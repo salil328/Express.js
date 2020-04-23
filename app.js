@@ -1,0 +1,16 @@
+// var express = require('express')
+// var app = express()
+// var route = require('./route')
+// app.use('/',route)
+// app.listen(3000)
+
+const express = require('express')
+const body = require('body-parser')
+const app = express()
+
+const adminroute= require('./routes/admin')
+const shoproute= require('./routes/shop')
+app.use(body.urlencoded({extended : false}))
+app.use(adminroute)
+app.use(shoproute)
+app.listen(3000)

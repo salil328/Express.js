@@ -1,0 +1,21 @@
+<html>
+<head>
+    
+</head>
+<style>
+    body{
+        background-color: limegreen;
+                }
+</style>
+
+    <body>
+        <h1>name is : <%=name%></h1>
+        <h2>id: <%=id%></h2>
+     <h3>Languagess</h3>
+     <ul><%languages foreach(function(item) { %>
+    <li><%=item%></li> 
+    <%});%>    
+    </ul>
+        
+    </body>
+</html>
